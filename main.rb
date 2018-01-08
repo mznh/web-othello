@@ -4,6 +4,7 @@
 
 require 'bundler/setup'
 require 'sinatra'
+require 'haml'
 require './othello.rb'
 
 #set :bind, '0.0.0.0'
