@@ -7,6 +7,11 @@ GEM
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -20,6 +25,7 @@ PLATFORMS
 
 DEPENDENCIES
   foreman
+  rails_12factor
   sinatra
 
 BUNDLED WITH

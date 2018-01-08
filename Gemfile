@@ -7,6 +7,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'sinatra'
 
+gem 'rails_12factor', group: :production
+
 group :development do
   gem 'foreman'
   end 
