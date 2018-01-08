@@ -6,7 +6,7 @@ require 'bundler/setup'
 require 'sinatra'
 require './othello.rb'
 
-set :bind, '0.0.0.0'
+#set :bind, '0.0.0.0'
 
 use Rack::Session::Cookie,
   :key => 'rack.session',
