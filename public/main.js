@@ -1,6 +1,6 @@
 var cell_click = function(cell){
 	var send_txt = cell.value;
-	var req_url = 'http://www.mznh.jp:4567/json/'+ send_txt+"";
+	var req_url = location.href+'/json/'+ send_txt+"";
 	var side = ["","白","黒"]
 	$.ajax({ type:'GET', url:req_url, dataType:'json' }).then(
 		function(json) {
