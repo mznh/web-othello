@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 # coding: utf-8
 
+
+require 'bundler/setup'
 require 'sinatra'
-require 'sinatra/reloader'
 require './othello.rb'
 
 set :bind, '0.0.0.0'
