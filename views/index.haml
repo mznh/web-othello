@@ -1,0 +1,31 @@
+!!! 5
+%html
+	%head
+		%title Othello Game 
+		%meta{charset:"utf-8"}
+		%meta{"http-equiv":"X-UA-Compatible",CONTENT:"IE=EmulateIE9"} 
+		%script{src:"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+		%script{src:"main.js"}
+	%body
+	#side
+		%p 今は#{$side_char[session[:side]]}の番です。
+	#game_board
+		- 8.times do |i| 
+			- 8.times do |j|
+				- case session[:game_board][i][j]
+				- when 0 then
+					%input#cell{type:"image",src:"blank.png",value:"#{i},#{j}",alt:"#{i},#{j}",name:"input_pos",width:"32",height:"32",onclick:"cell_click(this)",
+						style:"margin:0px"}
+				- when 1 then 
+					%input#cell{type:"image",src:"white.png",value:"#{i},#{j}",alt:"#{i},#{j}",name:"input_pos",width:"32",height:"32",onclick:"cell_click(this)",
+						style:"margin:0px"}
+				- when 2 then 
+					%input#cell{type:"image",src:"black.png",value:"#{i},#{j}",alt:"#{i},#{j}",name:"input_pos",width:"32",height:"32",onclick:"cell_click(this)",
+						style:"margin:0px"}
+			%br
+	#button
+		%form{action:"/",method:"post"}
+			%input#pass{type:"submit",value:"パス",name:"pass"}
+			%input#pass{type:"submit",value:"リセット",name:"reset"}
+
+
