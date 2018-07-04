@@ -7,14 +7,14 @@ require 'sinatra'
 require 'haml'
 require './othello.rb'
 
-#set :bind, '0.0.0.0'
+set :bind, '0.0.0.0'
 
 use Rack::Session::Cookie,
   :key => 'rack.session',
 #  :domain => 'foo.com',
 #  :path => '/',
   :expire_after => 3600,
-  :secret => "#{rand(100)}"
+  :secret => "#{rand(1000)}"
 
 opponent = [0,2,1]
 $side_char = [0,"白","黒"]
