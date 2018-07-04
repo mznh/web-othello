@@ -7,7 +7,11 @@ require 'sinatra'
 require 'haml'
 require './othello.rb'
 
-set :bind, '0.0.0.0'
+
+
+configure do
+  set :environment, :production
+end
 
 use Rack::Session::Cookie,
   :key => 'rack.session',
