@@ -15,7 +15,7 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
-    sinatra (2.0.0)
+    sinatra (2.0.2)
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.0)
