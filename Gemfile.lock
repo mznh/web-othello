@@ -7,7 +7,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     mustermann (1.0.1)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-protection (2.0.0)
       rack
     rails_12factor (0.0.3)
